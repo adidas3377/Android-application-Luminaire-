@@ -1,0 +1,55 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_welcome_activity_fifth"
+    tools:context="com.example.lamp.WelcomeActivityFragments.FifthFragment">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"                android:fontFamily="@font/roboto_light"
+
+
+        android:text="Как мне обращаться к тебе? :)"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btnFifthFragment"
+        android:layout_width="200sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="70dp"
+        android:textSize="23sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Готово"
+        android:fontFamily="@font/roboto_light"
+
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+</android.support.constraint.ConstraintLayout>
